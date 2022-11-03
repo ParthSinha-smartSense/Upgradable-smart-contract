@@ -109,7 +109,4 @@ library StorageSlot {
         }
     }
 
-    function setStorage(bytes32 _addr, address val) internal {
-        getStorage(_addr).addr = val;
-    }
 }

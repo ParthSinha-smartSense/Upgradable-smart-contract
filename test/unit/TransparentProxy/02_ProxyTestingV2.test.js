@@ -7,7 +7,7 @@ require("web3");
 const chainID = config.network_id;
 
 (chainID == 5777 ? contract : contract.skip)(
-  "Proxy",
+  "Proxy-CounterV2",
   async function (accounts) {
     before(async () => {
       instance = await Proxy.deployed();
