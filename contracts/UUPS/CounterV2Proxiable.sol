@@ -28,14 +28,13 @@ contract CounterV2Proxiable is Proxiable {
         count += 1;
     }
 
-    function dec() external {
+    function dec() onlyOwner() external {
         count -= 1;
     }
 
     function multiply(uint256 a, uint256 b)
         external
-        view
-        onlyOwner
+        view        
         returns (uint256 c)
     {
         c = a * b;
