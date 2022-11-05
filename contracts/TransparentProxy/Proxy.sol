@@ -13,19 +13,23 @@ contract Proxy {
         _setAdmin(msg.sender);
     }
 
+    //0x21bc166c
     function _setAdmin(address _admin) private {
         require(_admin != address(0), "admin = zero address");
         StorageSlot.getStorage(ADMIN_SLOT).addr = _admin;
     }
 
+    //0x44f3454b
     function _setImplementation(address _addr) public ifAdmin {
         StorageSlot.getStorage(IMPLEMENTATION_SLOT).addr = _addr;
     }
 
+    //0x42404e07
     function _getImplementation() public ifAdmin returns (address) {
         return StorageSlot.getStorage(IMPLEMENTATION_SLOT).addr;
     }
 
+    //0x839f5fb8
     function _getAdmin() public view returns (address) {
         return StorageSlot.getStorage(ADMIN_SLOT).addr;
     }
@@ -108,5 +112,4 @@ library StorageSlot {
             temp.slot := _addr
         }
     }
-
 }

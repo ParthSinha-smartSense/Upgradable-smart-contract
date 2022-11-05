@@ -1,0 +1,66 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x2051b83349E2089aE840109A10dcAeffC4eFA72B",
+    "txHash": "0xc46429f8f7892b4e390c02a93bf6eec39e2b5b8c92a5dbc1c43b829eaa91b969"
+  },
+  "proxies": [
+    {
+      "address": "0xd2fFd0bfA56B1426f602e3c156A5B017A5165496",
+      "txHash": "0x6032fc2cecae72b54090066eda5c878df49f78fc182c09d2a4a8a43a1de2738b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x952E5aC581f649146d289CA3c1B3aF23FDF0821c",
+      "txHash": "0xb21ac62a9c571348f3f01474ac2c6f6b25cdbaa969b2540985ba79711da58c4d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xEbDE30D83beb6F6133b0Aad37963Cc837b173e22",
+      "txHash": "0x1e86319a544a94b82b1032c6a45b930d72a5eed95e6cd2b3491b87c0a506bea4",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "dd23214b43bdf1a1f1aaef8f6ff7b0392fc8973840e19f0e352f138b0e1a6cef": {
+      "address": "0xF2f0AF12251f2E1f6936Cef73466561AEd3D9a21",
+      "txHash": "0x927a7380188c9630266c2df46029f55c93780317b20a50b0e09f324cf8ae495a",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "contract": "CounterV1",
+            "label": "count",
+            "type": "t_uint256",
+            "src": "../project:/contracts/TransparentProxy/CounterV1.sol:5"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "171b0a6cae995c86d913e8ad6a79d624869def90b4b1ffc6af20e3b0e78d75c9": {
+      "address": "0x2A2EDE30cFE134c172cDD67F89395E6D4b64D100",
+      "txHash": "0x2991be7a25fd42826a362c63f96e158df579579fd60ce97267c24a0d5eb40ab4",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "contract": "CounterV2",
+            "label": "count",
+            "type": "t_uint256",
+            "src": "../project:/contracts/TransparentProxy/CounterV2.sol:5"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    }
+  }
+}
