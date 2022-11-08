@@ -5,7 +5,6 @@ const parse = require("./../.openzeppelin/unknown-1337.json");
 
 module.exports = async function (deployer) {
   const existing = await CounterV1.deployed();
-  //console.log(parse.proxies)
   const instance = await upgradeProxy(parse.proxies[1].address, CounterV2, {
     deployer,
   });
